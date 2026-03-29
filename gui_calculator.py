@@ -70,3 +70,8 @@ class Calculator:
     def solve(self):
         result=eval(self.entry_value)
         self.equation.set(result)
+
+# running the application
+root=Tk()
+calculator=Calculator(root)
+root.mainloop()
