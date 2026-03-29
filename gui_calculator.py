@@ -29,3 +29,8 @@ class Calculator:
         Button(width=11,height=4,text='7',relief='flat',bg='white',command=lambda:self.show(7)).place(x=0 ,y=125)
         Button(width=11,height=4,text='8',relief='flat',bg='white',command=lambda:self.show(8)).place(x=90 ,y=125)
         Button(width=11,height=4,text='9',relief='flat',bg='white',command=lambda:self.show(9)).place(x=180 ,y=125)
+
+        # adding number buttons (4,5,6)
+        Button(width=11,height=4,text='4',relief='flat',bg='white',command=lambda:self.show(4)).place(x=0 ,y=200)
+        Button(width=11,height=4,text='5',relief='flat',bg='white',command=lambda:self.show(5)).place(x=90 ,y=200)
+        Button(width=11,height=4,text='6',relief='flat',bg='white',command=lambda:self.show(6)).place(x=180 ,y=200)
