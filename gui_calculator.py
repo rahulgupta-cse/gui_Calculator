@@ -42,8 +42,12 @@ class Calculator:
         Button(master, text='4', width=11, height=4,command=lambda: self.show(4)).place(x=0, y=200)
         Button(master, text='5', width=11, height=4,command=lambda: self.show(5)).place(x=90, y=200)
         Button(master, text='6', width=11, heightcommand=lambda: self.show(6)).place(x=180, y=200)
-        
+
         # adding number buttons (1,2,3)
         Button(master, text='1', width=11, height=4,command=lambda: self.show(1)).place(x=0, y=275)
         Button(master, text='2', width=11, height=4,command=lambda: self.show(2)).place(x=90, y=275)
         Button(master, text='3', width=11, height=4,command=lambda: self.show(3)).place(x=180, y=275)
+
+        # adding 0 and decimal button
+        Button(master, text='0', width=11, height=4,command=lambda: self.show(0)).place(x=90, y=350)
+        Button(master, text='.', width=11, height=4,command=lambda: self.show('.')).place(x=180, y=350)
