@@ -60,3 +60,8 @@ class Calculator:
     def show(self,value):
         self.entry_value+=str(value)
         self.equation.set(self.entry_value)
+
+    # function to clear screen
+    def clear(self):
+        self.entry_value=''
+        self.equation.set(self.entry_value)
