@@ -12,3 +12,6 @@ root.geometry('357x420+0+0')
 
 # disabling resize for fixed layout
 root.resizable(False, False)
+
+# setting background color
+root.config(bg='gray')
