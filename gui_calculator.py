@@ -14,4 +14,7 @@ class Calculator:
         # storing equation
         self.equation = StringVar()
         self.entry_value = ''
+
+        # display
+        Entry(master, width=17, bg='#dcdcdc',font=('Arial Bold', 28),textvariable=self.equation).place(x=0, y=0)
         
