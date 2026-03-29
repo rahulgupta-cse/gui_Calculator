@@ -18,3 +18,6 @@ class Calculator:
         # display
         Entry(master, width=17, bg='#dcdcdc',font=('Arial Bold', 28),textvariable=self.equation).place(x=0, y=0)
         
+        # adding bracket buttons
+        Button(width=11,height=4,text='(',relief='flat',bg='white',command=lambda:self.show('(')).place(x=0 ,y=50)
+        Button(width=11,height=4,text=')',relief='flat',bg='white',command=lambda:self.show(')')).place(x=90 ,y=50)
