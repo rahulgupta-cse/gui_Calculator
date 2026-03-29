@@ -73,3 +73,8 @@ def show(self, value):
 def solve(self):
     result = eval(self.entry_value)
     self.equation.set(result)
+
+# creating calculator object
+calculator = Calculator(root)
+# running the application
+root.mainloop()
