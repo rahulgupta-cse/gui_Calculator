@@ -65,3 +65,8 @@ class Calculator:
     def clear(self):
         self.entry_value=''
         self.equation.set(self.entry_value)
+
+    # function to calculate result
+    def solve(self):
+        result=eval(self.entry_value)
+        self.equation.set(result)
