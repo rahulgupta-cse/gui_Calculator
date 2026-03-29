@@ -63,3 +63,8 @@ class Calculator:
 
         # adding clear button
         Button(master, text='C', width=11, height=4,command=self.clear).place(x=0, y=350)
+
+# function to show input on screen
+def show(self, value):
+    self.entry_value += str(value)
+    self.equation.set(self.entry_value)
