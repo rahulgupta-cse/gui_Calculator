@@ -11,6 +11,8 @@ class Calculator:
         master.config(bg='gray')
         master.resizable(False,False)
 
+        self.is_result = False  # to track if result was just shown
+
         # storing equation
         self.equation = StringVar()
         self.entry_value = ''
@@ -57,8 +59,12 @@ class Calculator:
         Button(width=11,height=4,text='C',relief='flat',bg='white',command=self.clear).place(x=0 ,y=350)
 
         #  correct placement
-    def show(self,value):
-        self.entry_value+=str(value)
+    def show(self, value):
+        if self.is_result:   # ✅ check if result was shown
+            self.entry_value = ''
+            self.is_result = False
+
+        self.entry_value += str(value)
         self.equation.set(self.entry_value)
 
     # function to clear screen
@@ -76,8 +82,13 @@ class Calculator:
         try:
             result = eval(self.entry_value)
             self.equation.set(result)
+            self.entry_value = str(result)
+            self.is_result = True   # ✅ ADD HERE
         except:
             self.equation.set("Error")
+            self.entry_value = ''
+
+    
 
 
 # running the application
