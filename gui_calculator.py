@@ -34,3 +34,7 @@ class Calculator:
         Button(master, text=')', width=11, height=4,command=lambda: self.show(')')).place(x=90, y=50)
         # adding percentage button
         Button(master, text='%', width=11, height=4,command=lambda: self.show('%')).place(x=180, y=50)
+        # adding number buttons (7,8,9)
+        Button(master, text='7', width=11, height=4,command=lambda: self.show(7)).place(x=0, y=125)
+        Button(master, text='8', width=11, height=4,command=lambda: self.show(8)).place(x=90, y=125)
+        Button(master, text='9', width=11, height=4,command=lambda: self.show(9)).place(x=180, y=125)
