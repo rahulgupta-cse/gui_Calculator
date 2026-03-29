@@ -26,3 +26,6 @@ class Calculator:
         # creating variable to store equation
         self.equation = StringVar()
         self.entry_value = ''
+        
+        # creating display screen
+        Entry(master, width=17, bg='#dcdcdc', font=('Arial Bold', 28),textvariable=self.equation).place(x=0, y=0)
