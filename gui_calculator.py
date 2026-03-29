@@ -78,3 +78,11 @@ def solve(self):
 calculator = Calculator(root)
 # running the application
 root.mainloop()
+
+# added basic error handling to avoid crash
+def solve(self):
+    try:
+        result = eval(self.entry_value)
+        self.equation.set(result)
+    except:
+        self.equation.set("Error")
