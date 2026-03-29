@@ -70,8 +70,18 @@ class Calculator:
     def solve(self):
         result=eval(self.entry_value)
         self.equation.set(result)
+    
+    # added basic error handling to avoid crash
+    def solve(self):
+        try:
+            result = eval(self.entry_value)
+            self.equation.set(result)
+        except:
+            self.equation.set("Error")
+
 
 # running the application
 root=Tk()
 calculator=Calculator(root)
 root.mainloop()
+
