@@ -18,3 +18,8 @@ root.config(bg='gray')
 
 # importing remaining tkinter components
 from tkinter import Entry, Button, StringVar
+
+# creating calculator class for better structure
+class Calculator:
+    def __init__(self, master):
+        self.master = master
