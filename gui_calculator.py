@@ -52,4 +52,6 @@ class Calculator:
 
         # adding equal button
         Button(width=11,height=4,text='=',relief='flat',bg='lightgray',command=self.solve).place(x=270 ,y=350)
-        
+
+        # adding clear button
+        Button(width=11,height=4,text='C',relief='flat',bg='white',command=self.clear).place(x=0 ,y=350)
