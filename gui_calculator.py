@@ -32,3 +32,5 @@ class Calculator:
         # adding bracket buttons
         Button(master, text='(', width=11, height=4,command=lambda: self.show('(')).place(x=0, y=50)
         Button(master, text=')', width=11, height=4,command=lambda: self.show(')')).place(x=90, y=50)
+        # adding percentage button
+        Button(master, text='%', width=11, height=4,command=lambda: self.show('%')).place(x=180, y=50)
