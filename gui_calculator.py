@@ -51,3 +51,9 @@ class Calculator:
         # adding 0 and decimal button
         Button(master, text='0', width=11, height=4,command=lambda: self.show(0)).place(x=90, y=350)
         Button(master, text='.', width=11, height=4,command=lambda: self.show('.')).place(x=180, y=350)
+
+        # adding operator buttons
+        Button(master, text='+', width=11, height=4,command=lambda: self.show('+')).place(x=270, y=275)
+        Button(master, text='-', width=11, height=4,command=lambda: self.show('-')).place(x=270, y=200)
+        Button(master, text='/', width=11, height=4,command=lambda: self.show('/')).place(x=270, y=50)
+        Button(master, text='x', width=11, height=4,command=lambda: self.show('*')).place(x=270, y=125)
