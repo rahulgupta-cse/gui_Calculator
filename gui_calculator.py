@@ -55,3 +55,8 @@ class Calculator:
 
         # adding clear button
         Button(width=11,height=4,text='C',relief='flat',bg='white',command=self.clear).place(x=0 ,y=350)
+
+        #  correct placement
+    def show(self,value):
+        self.entry_value+=str(value)
+        self.equation.set(self.entry_value)
