@@ -39,3 +39,7 @@ class Calculator:
         Button(width=11,height=4,text='1',relief='flat',bg='white',command=lambda:self.show(1)).place(x=0 ,y=275)
         Button(width=11,height=4,text='3',relief='flat',bg='white',command=lambda:self.show(3)).place(x=180 ,y=275)
         Button(width=11,height=4,text='2',relief='flat',bg='white',command=lambda:self.show(2)).place(x=90 ,y=275)
+
+        # adding 0 and decimal button
+        Button(width=11,height=4,text='0',relief='flat',bg='white',command=lambda:self.show(0)).place(x=90 ,y=350)
+        Button(width=11,height=4,text='.',relief='flat',bg='white',command=lambda:self.show('.')).place(x=180 ,y=350)
