@@ -11,6 +11,7 @@ class Calculator:
         master.config(bg='gray')
         master.resizable(False,False)
 
+        # to track if result was just show
         self.is_result = False  # to track if result was just shown
 
         # storing equation
@@ -60,7 +61,7 @@ class Calculator:
 
         #  correct placement
     def show(self, value):
-        if self.is_result:   # ✅ check if result was shown
+        if self.is_result:   #check if result was shown
             self.entry_value = ''
             self.is_result = False
 
@@ -83,7 +84,7 @@ class Calculator:
             result = eval(self.entry_value)
             self.equation.set(result)
             self.entry_value = str(result)
-            self.is_result = True   # ✅ ADD HERE
+            self.is_result = True
         except:
             self.equation.set("Error")
             self.entry_value = ''
