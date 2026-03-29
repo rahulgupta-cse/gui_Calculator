@@ -23,3 +23,6 @@ from tkinter import Entry, Button, StringVar
 class Calculator:
     def __init__(self, master):
         self.master = master
+        # creating variable to store equation
+        self.equation = StringVar()
+        self.entry_value = ''
