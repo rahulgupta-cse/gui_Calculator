@@ -68,3 +68,8 @@ class Calculator:
 def show(self, value):
     self.entry_value += str(value)
     self.equation.set(self.entry_value)
+
+# function to calculate result
+def solve(self):
+    result = eval(self.entry_value)
+    self.equation.set(result)
