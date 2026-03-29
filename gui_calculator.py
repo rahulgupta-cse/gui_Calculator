@@ -49,3 +49,7 @@ class Calculator:
         Button(width=11,height=4,text='-',relief='flat',bg='white',command=lambda:self.show('-')).place(x=270 ,y=200)
         Button(width=11,height=4,text='/',relief='flat',bg='white',command=lambda:self.show('/')).place(x=270 ,y=50)
         Button(width=11,height=4,text='x',relief='flat',bg='white',command=lambda:self.show('*')).place(x=270 ,y=125)
+
+        # adding equal button
+        Button(width=11,height=4,text='=',relief='flat',bg='lightgray',command=self.solve).place(x=270 ,y=350)
+        
