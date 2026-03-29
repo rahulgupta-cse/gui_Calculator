@@ -29,3 +29,6 @@ class Calculator:
         
         # creating display screen
         Entry(master, width=17, bg='#dcdcdc', font=('Arial Bold', 28),textvariable=self.equation).place(x=0, y=0)
+        # adding bracket buttons
+        Button(master, text='(', width=11, height=4,command=lambda: self.show('(')).place(x=0, y=50)
+        Button(master, text=')', width=11, height=4,command=lambda: self.show(')')).place(x=90, y=50)
