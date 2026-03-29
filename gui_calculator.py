@@ -15,3 +15,6 @@ root.resizable(False, False)
 
 # setting background color
 root.config(bg='gray')
+
+# importing remaining tkinter components
+from tkinter import Entry, Button, StringVar
