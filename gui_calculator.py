@@ -57,3 +57,6 @@ class Calculator:
         Button(master, text='-', width=11, height=4,command=lambda: self.show('-')).place(x=270, y=200)
         Button(master, text='/', width=11, height=4,command=lambda: self.show('/')).place(x=270, y=50)
         Button(master, text='x', width=11, height=4,command=lambda: self.show('*')).place(x=270, y=125)
+        
+        # adding equal button
+        Button(master, text='=', width=11, height=4,bg='lightgray', command=self.solve).place(x=270, y=350)
