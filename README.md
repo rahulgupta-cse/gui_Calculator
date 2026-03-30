@@ -37,6 +37,7 @@ The calculator provides a graphical interface where users can click buttons to e
    python gui_calculator.py
    ```
 4. The calculator window will open
+5. Now You are ready use the calculator
 
 ## Key Concepts Used
 
