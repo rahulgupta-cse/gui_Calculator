@@ -60,6 +60,7 @@ The calculator provides a graphical interface where users can click buttons to e
 * Add scientific calculator features
 * Avoid using eval() for better security
 * Add function to find Binary , Octa decimal and Hexa Decimal of a Decimal number
+* Add features like calculation of SI(simple interest) and CI (Compund interest)
 
 ## Author
 
