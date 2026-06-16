@@ -16,6 +16,7 @@ The calculator provides a graphical interface where users can click buttons to e
 * Percentage calculation support
 * Clear button to erase input
 * Displays error for invalid inputs
+  
 
 ## Code Structure
 
@@ -58,6 +59,7 @@ The calculator provides a graphical interface where users can click buttons to e
 * Improve layout and design
 * Add scientific calculator features
 * Avoid using eval() for better security
+* Add function to find Binary , Octa decimal and Hexa Decimal of a Decimal number
 
 ## Author
 
